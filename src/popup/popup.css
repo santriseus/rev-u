@@ -1,0 +1,103 @@
+#button {
+    /* 	design the outer circle */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px 0 #888;
+
+    /* 	required to position children elements */
+    position: relative;
+
+    /* 	required to center elements*/
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+
+#button::before {
+    /* 	pseudo-elements don't display if content property is not declared */
+    content: "";
+
+    /* 	design the inner-ring */
+    width: 50%;
+    height: 50%;
+    border: 10px solid #eee;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.light {
+    /* 	design the vertical light */
+    height: 30%;
+    width: 10px;
+    background: #eee;
+    border-radius: 10px;
+
+    /* 	position the light correctly */
+    position: absolute;
+    top: 20px;
+
+    /* 	required to give white-space to inner-ring */
+    box-shadow: 0 0 0 10px #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+}
+
+#button:active {
+    box-shadow: 0 0 10px 0 #888 inset;
+}
+
+#button:active .light  {
+    background: #a435f0;
+}
+
+#button.active .light  {
+    background: #a435f0;
+}
+
+#button:active::before {
+    border-color: #a435f0;
+}
+
+#button.active::before {
+    border-color: #a435f0;
+}
+
+
+
+/*=========================
+GENERAL CODE FOR CENTERING ELEMENTS ON THE PAGE.
+UNRELATED TO THIS TUTORIAL.
+===========================*/
+
+body {
+    width: 300px;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background: #2d2f31;
+    color: white;
+    font-size: 10px;
+}
+
+button {
+    background-color: #2d2f31;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px;
+}

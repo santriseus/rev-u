@@ -1,0 +1,81 @@
+div[data-urmt-enabled] label[data-urmt-selected-answer] div.ud-toggle-input-block-outline {
+    border: 5px solid #a435f0;
+}
+div[data-urmt-enabled] label[data-urmt-correct] {
+    background: transparent;
+}
+
+div[data-urmt-enabled] label[data-urmt-incorrect] {
+    background: transparent;
+}
+
+div[data-urmt-enabled] label[data-urmt-label] {
+    cursor: pointer;
+}
+div[data-urmt-enabled] span[class^="mc-quiz-question--correct"] {
+    display: none;
+}
+
+div[data-urmt-enabled] span[class*=" mc-quiz-question--correct"] {
+    display: none;
+}
+
+div[data-urmt-enabled] span[class^="mc-quiz-question--incorrect"] {
+    display: none;
+}
+
+div[data-urmt-enabled] span[class*=" mc-quiz-question--incorrect"] {
+    display: none;
+}
+
+div[data-urmt-enabled] div[class^="mc-quiz-question--skipped"] {
+    display: none;
+}
+
+div[data-urmt-enabled] div[class*=" mc-quiz-question--skipped"] {
+    display: none;
+}
+div[data-urmt-enabled] div[class^="mc-quiz-answer--correctness"] {
+    display: none;
+}
+
+div[data-urmt-enabled] div[class*=" mc-quiz-answer--correctness"] {
+    display: none;
+}
+div[data-urmt-enabled] div[class^="detailed-result-panel--top-row"] {
+    display: none;
+}
+
+div[data-urmt-enabled] div[class*=" detailed-result-panel--top-row"] {
+    display: none;
+}
+div[data-urmt-enabled] form[data-urmt-expanded='false']  div[class^="mc-quiz-question--explanation"] {
+    display: none;
+}
+div[data-urmt-enabled] form[data-urmt-expanded='true']  div[class^="mc-quiz-question--explanation"] {
+    display: block;
+}
+div[data-urmt-enabled] form[data-urmt-expanded='false']  div[class*=" mc-quiz-question--explanation"] {
+    display: none;
+}
+div[data-urmt-enabled] form[data-urmt-expanded='true']  div[class*=" mc-quiz-question--explanation"] {
+    display: block;
+}
+div[data-urmt-enabled] form[data-urmt-expanded='false'] button:before {
+    content: 'Show answer';
+}
+div[data-urmt-enabled] form[data-urmt-expanded='true'] button:before {
+    content: 'Hide answer';
+}
+
+div[data-urmt-enabled] form[data-urmt-expanded='true'] label[data-urmt-selected-answer]:not([data-urmt-correct]) {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+div[data-urmt-enabled] form[data-urmt-expanded='true'] label[data-urmt-correct] {
+    background-color: rgba(60, 179, 113, 0.5);
+}
+
+div[data-urmt-enabled] form[data-urmt-expanded='true'][data-urmt-is-correct='true']:first-child {
+    content: 'Correct';
+}

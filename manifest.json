@@ -1,0 +1,37 @@
+{
+  "name": "Rev U. Run Udemy quiz in \"review\" mode.",
+  "short_name": "Rev U",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Extension allows you to run questions one-by-one and check correct answer for each particular question and persist and sync the progress.",
+  "homepage_url": "https://github.com/santriseus/udemy-review-mode-tests",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png"
+    },
+    "default_title": "Udemy review mode tests.",
+    "default_popup": "src/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.udemy.com/*/result/*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ],
+      "css" : ["src/inject/inject.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
