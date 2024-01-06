@@ -1,7 +1,7 @@
 {
-  "name": "Rev U. Run Udemy quiz in \"review\" mode.",
-  "short_name": "Rev U",
-  "version": "0.0.1",
+  "name": "\"Review\" mode for Udemy practice tests.",
+  "short_name": "\"Review\" mode for Udemy practice tests.",
+  "version": "0.0.2",
   "manifest_version": 3,
   "description": "Run questions one-by-one and check correct answer for each particular question, persist and sync the progress.",
   "homepage_url": "https://github.com/santriseus/udemy-review-mode-tests",
@@ -15,7 +15,7 @@
       "16": "icons/icon16.png",
       "32": "icons/icon32.png"
     },
-    "default_title": "Udemy review mode tests.",
+    "default_title": "Review mode for Udemy practice tests.",
     "default_popup": "src/popup/popup.html"
   },
   "content_scripts": [
