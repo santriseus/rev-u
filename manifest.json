@@ -1,9 +1,9 @@
 {
-  "name": "\"Review\" mode for Udemy practice tests.",
-  "short_name": "\"Review\" mode for Udemy practice tests.",
-  "version": "0.0.2",
+  "name": "Udemy tests: immediate single answer check.",
+  "short_name": "Udemy practice tests with immediate single answer checking.",
+  "version": "0.0.3",
   "manifest_version": 3,
-  "description": "Run questions one-by-one and check correct answer for each particular question, persist and sync the progress.",
+  "description": "Check correct answer immediately for any single question, persist and sync the progress.",
   "homepage_url": "https://github.com/santriseus/udemy-review-mode-tests",
   "icons": {
     "16": "icons/icon16.png",
