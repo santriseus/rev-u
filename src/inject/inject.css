@@ -1,5 +1,6 @@
 div[data-urmt-enabled] label[data-urmt-selected-answer] div.ud-toggle-input-block-outline {
-    border: 5px solid #a435f0;
+    border: 2px solid #a435f0;
+    box-shadow: #a435f0 0px 7px 7px -7px;
 }
 div[data-urmt-enabled] label[data-urmt-correct] {
     background: transparent;
@@ -78,4 +79,21 @@ div[data-urmt-enabled] form[data-urmt-expanded='true'] label[data-urmt-correct] 
 
 div[data-urmt-enabled] form[data-urmt-expanded='true'][data-urmt-is-correct='true']:first-child {
     content: 'Correct';
+}
+
+div[data-urmt-enabled] .ud-real-toggle-input~.ud-fake-toggle-radio-large {
+    background: none;
+    box-shadow: none;
+}
+div[data-urmt-enabled] label[data-urmt-selected-answer]  .ud-real-toggle-input~.ud-fake-toggle-radio-large {
+    background: #a435f0;
+    box-shadow: 0 0 0 0.4rem var(--color-white) inset;
+}
+div[data-urmt-enabled] .ud-real-toggle-input~.ud-fake-toggle-checkbox {
+    background: none;
+    color: transparent;
+}
+div[data-urmt-enabled] label[data-urmt-selected-answer]  .ud-real-toggle-input~.ud-fake-toggle-checkbox {
+    background: #a435f0;
+    color: var(--color-white);
 }
