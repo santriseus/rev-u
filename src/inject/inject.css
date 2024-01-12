@@ -1,6 +1,5 @@
 div[data-urmt-enabled] label[data-urmt-selected-answer] div.ud-toggle-input-block-outline {
     border: 2px solid #a435f0;
-    box-shadow: #a435f0 0px 7px 7px -7px;
 }
 div[data-urmt-enabled] label[data-urmt-correct] {
     background: transparent;

@@ -1,7 +1,7 @@
 {
   "name": "Udemy tests: immediate single answer check.",
   "short_name": "Udemy practice tests with immediate single answer checking.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "manifest_version": 3,
   "description": "Check correct answer immediately for any single question, persist and sync the progress.",
   "homepage_url": "https://github.com/santriseus/review-mode-for-udemy-tests",
